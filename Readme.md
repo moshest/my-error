@@ -26,20 +26,20 @@ function CodeError(code, message) {
   this.code = code;
 }
 util.inherits(CodeError, MyError);
+```
 
-
-// throw the error
+```javascript
 var assert = require('assert');
 
 try {
   throw new CodeError(404, 'Not Found!');
 } catch (err) {
-  assert(err instanceof CodeError);
-  assert(err instanceof Error);
-
   assert.strictEqual(err.name, 'CodeError');
   assert.strictEqual(err.code, 404);
   assert.strictEqual(err.message, 'Not Found!');
+  
+  assert(err instanceof CodeError);
+  assert(err instanceof Error);
 }
 ```
 
