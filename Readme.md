@@ -29,17 +29,18 @@ util.inherits(CodeError, MyError);
 ```
 
 ```javascript
-var assert = require('assert');
-
+// later on..
 try {
   throw new CodeError(404, 'Not Found!');
 } catch (err) {
-  assert.strictEqual(err.name, 'CodeError');
-  assert.strictEqual(err.code, 404);
-  assert.strictEqual(err.message, 'Not Found!');
+  // do some thing...
+
+  // err.name === 'CodeError';
+  // err.code === 404;
+  // err.message === 'Not Found!';
   
-  assert(err instanceof CodeError);
-  assert(err instanceof Error);
+  // err instanceof CodeError;
+  // err instanceof Error;
 }
 ```
 
