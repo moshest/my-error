@@ -1,0 +1,25 @@
+{
+  "name": "my-error",
+  "description": "Custom Error class for `util.inherits`",
+  "version": "0.1.0",
+  "homepage": "https://github.com/moshest/my-error",
+  "keywords": [
+    "error", "custom", "MyError", "inherits", "extend", "captureStackTrace"
+  ],
+  "author": "Moshe Simantov <ms@development.co.i>",
+  "main": "my-error.js",
+  "bugs": {
+    "url": "http://github.com/moshest/my-error/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moshest/my-error.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+	"node" : ">= 0.10"
+  },
+  "license": "MIT"
+}
